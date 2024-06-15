@@ -1,6 +1,6 @@
 // connecting to DB
 const mongoose = require('mongoose');
-const mongoURI = "mongodb://localhost:27017/"
+const mongoURI = "mongodb://localhost:27017/mynotebook"
 
 // gpt
 async function connectToMongo() {
