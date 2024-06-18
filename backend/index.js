@@ -3,7 +3,7 @@ const express = require('express');
 
 connectToMongo();
 const app = express();
-const port = 3000
+const port = 5000
 // const port = process.env.PORT || 3000;
 
 // Middleware to send request
