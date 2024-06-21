@@ -49,17 +49,27 @@ const NoteState = (props) => {
   }
 
   // Delete a Note
-  const deleteNote = (id) => {
+  const deleteNote = async (id) => {
     // TODO: API CALL
+    const response = await fetch(`${host}/api/notes/deletenote/${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+        "auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY3MjY4N2MxODFjMTc4NjQ4OTVlMjljIn0sImlhdCI6MTcxODc4MDEwMX0.pOBgIIjKI2WQrNRTuxc59DX5xWL5kCTCR7okdvyTNR4"
+      }
+    });
+    const json = response.json();
+    console.log(json);
     console.log("Deleting the note with id" + id);
     const newNotes = notes.filter((note) => {return note._id !== id})
     setNotes(newNotes)
   }
 
+
   // Edit a Note
   const editNote = async (id, title, description, tag) => {
     // TODO: API CALL
-    const response = await fetch(`${host}/api/notes/updatenote/6673b8433c074ce9d502b0ef`, {
+    const response = await fetch(`${host}/api/notes/updatenote/${id}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -68,6 +78,7 @@ const NoteState = (props) => {
       body: JSON.stringify({title, description, tag})
     });
     const json = response.json();
+    console.log(json)
 
     // Logic to edit in client
     for (let index = 0; index < notes.length; index++) {
