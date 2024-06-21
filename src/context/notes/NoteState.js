@@ -20,6 +20,60 @@ const NoteState = (props) => {
       "tag": "My Note",
       "date": "1718860208606",
       "__v": 0
+    },
+    {
+      "_id": "6673b9b03c074ce9d502b0f6",
+      "user": "6672687c181c17864895e29c",
+      "title": "New Note",
+      "description": "Please See the New Note",
+      "tag": "My Note",
+      "date": "1718860208606",
+      "__v": 0
+    },
+    {
+      "_id": "6673b9b03c074ce9d502b0f6",
+      "user": "6672687c181c17864895e29c",
+      "title": "New Note",
+      "description": "Please See the New Note",
+      "tag": "My Note",
+      "date": "1718860208606",
+      "__v": 0
+    },
+    {
+      "_id": "6673b9b03c074ce9d502b0f6",
+      "user": "6672687c181c17864895e29c",
+      "title": "New Note",
+      "description": "Please See the New Note",
+      "tag": "My Note",
+      "date": "1718860208606",
+      "__v": 0
+    },
+    {
+      "_id": "6673b9b03c074ce9d502b0f6",
+      "user": "6672687c181c17864895e29c",
+      "title": "New Note",
+      "description": "Please See the New Note",
+      "tag": "My Note",
+      "date": "1718860208606",
+      "__v": 0
+    },
+    {
+      "_id": "6673b9b03c074ce9d502b0f6",
+      "user": "6672687c181c17864895e29c",
+      "title": "New Note",
+      "description": "Please See the New Note",
+      "tag": "My Note",
+      "date": "1718860208606",
+      "__v": 0
+    },
+    {
+      "_id": "6673b9b03c074ce9d502b0f6",
+      "user": "6672687c181c17864895e29c",
+      "title": "New Note",
+      "description": "Please See the New Note",
+      "tag": "My Note",
+      "date": "1718860208606",
+      "__v": 0
     }
   ];
   const [notes, setNotes] = useState(notesInitial)
