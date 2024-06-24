@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {useNavigate} from 'react-router-dom'
 
-const Singup = () => {
+const Singup = (props) => {
   const [credentials, setCredentials] = useState({name: "",email: "" , password: "", cpassword: ""})
   let navigate = useNavigate();
 
@@ -22,9 +22,10 @@ const Singup = () => {
       // Save the authtoken and redirect
       localStorage.setItem('token', json.authtoken);
       navigate("/");
+      props.showAlert("Account Created Successfully", "success")
     }
     else{
-      alert("Invalid Credentials");
+      props.showAlert("Invalid Details", "danger")
     }
   }
 
