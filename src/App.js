@@ -9,6 +9,8 @@ import Home from './Components/Home';
 import About from './Components/About';
 import NoteState from './context/notes/NoteState';
 import Alert from './Components/Alert';
+import Login from './Components/Login';
+import Singup from './Components/Singup';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Routes>
           <Route exact path='/' element= {<Home/>}></Route>
           <Route exact path='/about' element= {<About/>}></Route>
+          <Route exact path='/login' element= {<Login/>}></Route>
+          <Route exact path='/singup' element= {<Singup/>}></Route>
         </Routes>
         </div>
       </Router>
